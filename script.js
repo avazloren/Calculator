@@ -89,5 +89,5 @@ function calculate(){
     let finalResult = operationSecondary(list)
     
     document.getElementById("display").innerText = finalResult
-    currentInput = finalResult.toString() //dicplays the result converted into a string
+    currentInput = finalResult.toString() //displays the result converted into a string
 }
