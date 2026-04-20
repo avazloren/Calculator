@@ -16,9 +16,15 @@ function convertToList(userInput){ //converts the input into a list of values
     let currentValue = ""
     for(let i = 0; i < userInput.length; i++){
         if (["+", "-", "*", "/"].includes(userInput[i])) {
-            valOps.push(currentValue)
-            valOps.push(userInput[i])
-            currentValue = ""
+            if(i != 0){//If it's the first number
+                valOps.push(currentValue)
+                valOps.push(userInput[i])
+                currentValue = ""
+
+            }else{
+                currentValue += userInput[i];
+            }
+            
         }else { 
             currentValue += userInput[i];
         }
@@ -90,4 +96,7 @@ function calculate(){
     
     document.getElementById("display").innerText = finalResult
     currentInput = finalResult.toString() //displays the result converted into a string
+    
 }
+
+
