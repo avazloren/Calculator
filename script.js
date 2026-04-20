@@ -16,9 +16,15 @@ function convertToList(userInput){ //converts the input into a list of values
     let currentValue = ""
     for(let i = 0; i < userInput.length; i++){
         if (["+", "-", "*", "/"].includes(userInput[i])) {
-            valOps.push(currentValue)
-            valOps.push(userInput[i])
-            currentValue = ""
+            if(currentValue.length != 0){
+                valOps.push(currentValue)
+                valOps.push(userInput[i])
+                currentValue = ""
+
+            }else{ //If it's the first number or the user adds a negative number
+                currentValue += userInput[i];
+            }
+            
         }else { 
             currentValue += userInput[i];
         }
@@ -85,9 +91,15 @@ function operationSecondary(splitedOp){ //for addition and subtraction
 function calculate(){
     if(!currentInput) return //stops the function immediately if there is nothing to calculate.
     let list = convertToList(currentInput)
+    console.log(list)
     list = operationPrimary(list)
     let finalResult = operationSecondary(list)
     
-    document.getElementById("display").innerText = finalResult
+    document.getElementById("display").innerText = finalResult.toString()
     currentInput = finalResult.toString() //displays the result converted into a string
+
 }
+
+calculate()
+
+
