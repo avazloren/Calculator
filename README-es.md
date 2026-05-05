@@ -21,4 +21,8 @@ docker build -t calculator .
 
 # Ejecutar el contenedor en el puerto 8080
 docker run -d -p 8080:80 calculator:latest
+
+# Comprobar si el contenedor está desplegado
+docker ps
+curl localhost:8080
 ```

@@ -21,4 +21,8 @@ docker build -t calculator .
 
 # Run the container on port 8080
 docker run -d -p 8080:80 calculator:latest
+
+# Test if the container is working
+docker ps
+curl localhost:8080
 ```
