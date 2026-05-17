@@ -7,11 +7,11 @@
 
 <img width="619" height="511" alt="ezgif-26c61f790c075188" src="https://github.com/user-attachments/assets/4348408c-cb17-43cc-9929-8cbce1732bd8" />
 
-## Descripción
+## 📖 Descripción
 
 Calculadora simple creada con **HTML, CSS y JavaScript**, lista y preparada para desplegarse en un contenedor de **Docker**.
 
-## Despliegue
+## 🛠️ Despliegue
 
 Comandos para construir la imagen y ejecutar el contenedor:
 
