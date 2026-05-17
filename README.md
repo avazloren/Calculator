@@ -7,11 +7,11 @@
 
 <img width="619" height="511" alt="ezgif-26c61f790c075188" src="https://github.com/user-attachments/assets/4348408c-cb17-43cc-9929-8cbce1732bd8" />
 
-## Description
+## 📖 Description
 
 A simple calculator built with **HTML, CSS, and JavaScript**, fully prepared and ready to be deployed as a **Docker** container.
 
-## Deployment
+## 🛠️ Deployment
 
 Commands to build the image and run the container:
 
